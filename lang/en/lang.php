@@ -1,6 +1,6 @@
 <?php return [
     'plugin' => [
-        'name' => 'openid',
+        'name' => 'openidconnect',
         'description' => 'OpenID Connect login'
     ]
 ];

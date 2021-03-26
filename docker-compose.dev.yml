@@ -1,0 +1,12 @@
+version: '2.2'
+services:
+  octobercms:
+    image: aspendigital/octobercms:php7.4-apache
+    ports:
+      - 8080:80
+    volumes:
+      - .:/var/www/html/plugins/mikp/openidconnect/
+    environment:
+      - APP_DEBUG=true
+      - INIT_PLUGINS=true
+      # - XDEBUG_ENABLE=true

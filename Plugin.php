@@ -1,4 +1,4 @@
-<?php namespace MikP\Openid;
+<?php namespace mikp\openidconnect;
 
 use System\Classes\PluginBase;
 
@@ -7,7 +7,7 @@ class Plugin extends PluginBase
     public $elevated = true;
 
 	public $require = ['RainLab.User', 'Flynsarmy.SocialLogin'];
-	
+
     public function registerComponents()
     {
     }
@@ -15,13 +15,13 @@ class Plugin extends PluginBase
     public function registerSettings()
     {
     }
-    
+
     public function  register_flynsarmy_sociallogin_providers()
     {
         return [
-            '\\MikP\\Openid\\SocialLoginProviders\\Ok' => [
-                'label' => 'OpenID',
-                'alias' => 'OpenID',
+            '\\mikp\\openidconnect\\SocialLoginProviders\\OpenIDConnect' => [
+                'label' => 'OpenIDConnect',
+                'alias' => 'OpenIDConnect',
                 'description' => 'Log in with OpendID Connect'
             ],
         ];

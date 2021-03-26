@@ -1,1 +1,1 @@
-# oc-openid-plugin
+# oc-openid-connect-plugin

@@ -1,6 +1,6 @@
 plugin:
-    name: 'mikp.openid::lang.plugin.name'
-    description: 'mikp.openid::lang.plugin.description'
+    name: 'mikp.openidconnect::lang.plugin.name'
+    description: 'mikp.openidconnect::lang.plugin.description'
     author: mik-p
     icon: oc-icon-openid
     homepage: ''
