@@ -23,6 +23,7 @@ class OpenIDConnectProvider extends OpenIDConnectClient
         $userProfile = new User\Profile();
 
         $userProfile->identifier  = $this->requestUserInfo('user_id');
+        //$userProfile->username    = $this->authParams['username'];
         $userProfile->email       = $this->requestUserInfo('email');
         $userProfile->firstName   = $this->requestUserInfo('given_name');
         $userProfile->lastName    = $this->requestUserInfo('family_name');

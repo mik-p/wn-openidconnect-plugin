@@ -39,6 +39,7 @@ class OpenIDConnect extends SocialLoginProviderBase
 
             $this->adapter->setVerifyHost(false);
             $this->adapter->setVerifyPeer(false);
+            $this->adapter->setRedirectURL($this->callback);
             // $this->adapter->setCertPath('/path/to/my.cert');
         }
 
