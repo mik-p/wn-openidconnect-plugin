@@ -9,7 +9,7 @@ use URL;
 
 class OpenIDConnect extends SocialLoginProviderBase
 {
-    use \October\Rain\Support\Traits\Singleton;
+    use \Winter\Storm\Support\Traits\Singleton;
 
     protected $driver = 'OpenIDConnect';
     protected $adapter;

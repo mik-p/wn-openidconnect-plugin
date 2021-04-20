@@ -6,7 +6,7 @@ class Plugin extends PluginBase
 {
     public $elevated = true;
 
-	public $require = ['RainLab.User', 'Flynsarmy.SocialLogin'];
+	public $require = ['Winter.User', 'Flynsarmy.SocialLogin'];
 
     public function registerComponents()
     {

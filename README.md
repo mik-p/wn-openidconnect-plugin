@@ -1,1 +1,1 @@
-# oc-openid-connect-plugin
+# wn-openid-connect-plugin

@@ -1,7 +1,7 @@
 version: '2.2'
 services:
-  octobercms:
-    image: aspendigital/octobercms:php7.4-apache
+  wintercms:
+    image: hiltonbanes/wintercms:php7.4-apache
     ports:
       - 8080:80
     volumes:
