@@ -1,4 +1,14 @@
 {
+    "name": "mikp/wn-openidconnect-plugin",
+    "description": "OpenID Connect extension to Social Login plugin",
+    "type": "winter-plugin",
+    "license": "BSD-3",
+    "authors": [
+        {
+            "name": "mik-p",
+            "email": "mppritchard3@hotmail.com"
+        }
+    ],
     "require": {
         "jumbojett/openid-connect-php": "^0.9.2"
     }
