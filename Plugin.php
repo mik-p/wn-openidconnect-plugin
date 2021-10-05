@@ -19,7 +19,7 @@ class Plugin extends PluginBase
     public function  register_flynsarmy_sociallogin_providers()
     {
         return [
-            '\\mikp\\openidconnect\\SocialLoginProviders\\OpenIDConnect' => [
+            'mikp\openidconnect\SocialLoginProviders\OpenIDConnect' => [
                 'label' => 'OpenIDConnect',
                 'alias' => 'OpenIDConnect',
                 'description' => 'Log in with OpendID Connect'
