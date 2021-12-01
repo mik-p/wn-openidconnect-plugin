@@ -5,8 +5,6 @@ namespace mikp\openidconnect\Classes;
 use Jumbojett\OpenIDConnectClient;
 use Hybridauth\User;
 
-use App;
-
 class OpenIDConnectProvider extends OpenIDConnectClient
 {
 
