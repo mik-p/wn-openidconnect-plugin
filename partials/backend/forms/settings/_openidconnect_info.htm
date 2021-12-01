@@ -4,7 +4,13 @@
         <h3>How to retrieve your credentials</h3>
     </div>
     <div class="content">
+        <p>This is a generic OpenID Connect handler. You will need to select an ID provider that supports OIDC and get
+            the required credentials.</p>
         <ol>
+            <li>Using your selected ID Provider, create an application for authentication</li>
+            <li>Get the application's authentication domain and OIDC conformant API base URI <b>(ID Provider)</b></li>
+            <li>Get the application's Client ID <b>(App ID)</b></li>
+            <li>Get the application's Client Secret <b>(Private Key)</b></li>
             <li><b>Valid OAuth redirect URIs</b> to <span style="color:green">
                     <?= URL::route('flynsarmy_sociallogin_provider_callback', ['OpenIDConnect']) ?>
                 </span></li>

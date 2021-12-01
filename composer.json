@@ -19,7 +19,10 @@
     "require": {
         "composer/installers": "~1.0",
         "winter/wn-user-plugin": "^2.0",
-        "flynsarmy/wn-sociallogin-plugin": "*",
-        "jumbojett/openid-connect-php": "^0.9.2"
+        "flynsarmy/wn-sociallogin-plugin": "dev-master",
+        "jumbojett/openid-connect-php": "^0.9.5"
+    },
+    "extra": {
+        "installer-name": "openidconnect"
     }
 }

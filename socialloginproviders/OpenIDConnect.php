@@ -26,8 +26,7 @@ class OpenIDConnect extends SocialLoginProviderBase
 
     public function getAdapter()
     {
-        if ( !$this->adapter )
-        {
+        if (!$this->adapter) {
             // Instantiate adapter using the configuration from our settings page
             $providers = $this->settings->get('providers', []);
 
@@ -37,9 +36,16 @@ class OpenIDConnect extends SocialLoginProviderBase
                 @$providers['OpenIDConnect']['client_secret']
             );
 
-            $this->adapter->setVerifyHost(false);
-            $this->adapter->setVerifyPeer(false);
+            $this->adapter->addScope('openid');
+            $this->adapter->addScope('profile');
+            $this->adapter->addScope('email');
+
             $this->adapter->setRedirectURL($this->callback);
+
+            if (config('app.debug')) {
+                $this->adapter->setVerifyHost(false);
+                $this->adapter->setVerifyPeer(false);
+            }
             // $this->adapter->setCertPath('/path/to/my.cert');
         }
 
@@ -112,7 +118,7 @@ class OpenIDConnect extends SocialLoginProviderBase
      */
     public function redirectToProvider()
     {
-        if ($this->getAdapter()->isConnected() )
+        if ($this->getAdapter()->isConnected())
             return \Redirect::to($this->callback);
 
         $this->getAdapter()->authenticate();
