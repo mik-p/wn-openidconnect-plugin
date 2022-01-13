@@ -1,8 +1,9 @@
 {
     "name": "mikp/wn-openidconnect-plugin",
     "description": "OpenID Connect extension to Social Login plugin",
+    "homepage": "https://github.com/mik-p/wn-openidconnect-plugin",
     "type": "winter-plugin",
-    "license": "BSD-3",
+    "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "mik-p",
@@ -20,9 +21,11 @@
         "composer/installers": "~1.0",
         "winter/wn-user-plugin": "^2.0",
         "flynsarmy/wn-sociallogin-plugin": "dev-master",
-        "jumbojett/openid-connect-php": "^0.9.5"
+        "jumbojett/openid-connect-php": "^0.9.5",
+        "treeware/plant": "^0.1.0"
     },
     "extra": {
-        "installer-name": "openidconnect"
+        "installer-name": "openidconnect",
+        "treeware": {}
     }
 }
