@@ -27,5 +27,10 @@
     "extra": {
         "installer-name": "openidconnect",
         "treeware": {}
+    },
+    "config": {
+        "allow-plugins": {
+            "treeware/plant": true
+        }
     }
 }
