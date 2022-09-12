@@ -21,16 +21,9 @@
         "composer/installers": "~1.0",
         "winter/wn-user-plugin": "^2.0",
         "flynsarmy/wn-sociallogin-plugin": "dev-master",
-        "jumbojett/openid-connect-php": "^0.9.5",
-        "treeware/plant": "^0.1.0"
+        "jumbojett/openid-connect-php": "^0.9.5"
     },
     "extra": {
-        "installer-name": "openidconnect",
-        "treeware": {}
-    },
-    "config": {
-        "allow-plugins": {
-            "treeware/plant": true
-        }
+        "installer-name": "openidconnect"
     }
 }
